@@ -27,7 +27,7 @@ import com.pramod.common.service.impl.OrderServiceImpl;
  */
 @Configuration
 @Import(DataConfig.class)
-@PropertySource("classpath:/application-${spring.profiles.active}.properties")
+@PropertySource("classpath:/application.properties")
 public class AppConfig {
 	
 	@Value(value = "${greeting.text}")
@@ -35,9 +35,6 @@ public class AppConfig {
 	
 	@Value(value = "${greeting.preamble}")
 	private String greetingPreamble;
-	
-	@Value("#{new Boolean(environment['spring.profiles.active']=='dev')}")
-	private boolean isDev;
 	
 	public class Worker{
 		
@@ -50,7 +47,7 @@ public class AppConfig {
 		}
 		
 		public void execute() {
-			System.out.println(preamble+" "+text+" isDev: "+isDev);
+			System.out.println(this.preamble+" "+this.text);
 		}
 	}
 	

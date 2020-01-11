@@ -36,7 +36,7 @@ public class AppConfig {
 	@Value(value = "${greeting.preamble}")
 	private String greetingPreamble;
 	
-	@Value("#{new Boolean(environment['spring.profiles.active']=='dev')}")
+	@Value("#{new Boolean(environment[spring.profiles.active]=='dev')}")
 	private boolean isDev;
 	
 	public class Worker{
