@@ -87,8 +87,6 @@ public class AppConfig {
 		System.out.println(orderService==null?"NULL":"A OK");
 		Worker worker = context.getBean(Worker.class);
 		worker.execute();
-		Worker worker1 = context.getBean(Worker.class);
-		worker.execute();
 	}
 	
 }
