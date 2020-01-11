@@ -13,14 +13,12 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import com.pramod.common.service.OrderService;
-
 /**
  * @author kkpramod
  *
  */
 @Configuration
-@PropertySource("classpath:/application.properties")
+@PropertySource("classpath:/application-${spring.profiles.active}.properties")
 @ComponentScan(basePackages = {"com.pramod.common"})
 public class AppConfig {
 	
@@ -30,6 +28,7 @@ public class AppConfig {
 	@Value(value = "${greeting.preamble}")
 	private String greetingPreamble;
 	
+	@Component
 	public class Worker{
 		
 		private String preamble;
@@ -55,9 +54,6 @@ public class AppConfig {
 	
 	public static void main(String [] args) {
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-		Worker worker = context.getBean(Worker.class);
-		worker.execute();
-		OrderService orderService = context.getBean(OrderService.class);
 	}
 	
 }

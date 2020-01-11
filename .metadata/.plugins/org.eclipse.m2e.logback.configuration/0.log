@@ -3530,3 +3530,55 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2020-01-11 21:17:04,296 [Worker-165: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
 2020-01-11 21:17:04,297 [Worker-165: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-01-11 21:17:04,302 [Worker-165: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:22:18,676 [Worker-178: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:22:18,679 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:22:18,680 [Worker-178: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:22:18,681 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:24:12,291 [Worker-178: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:24:12,293 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:24:12,295 [Worker-178: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:24:12,296 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:25:42,321 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:25:42,323 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:25:42,325 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:25:42,326 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:31:19,587 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:31:19,588 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:31:19,591 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:31:19,592 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:33:01,604 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:33:01,606 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:33:01,608 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:33:01,609 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:33:34,066 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:33:34,069 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:33:34,071 [Worker-181: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:33:34,073 [Worker-181: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:34:54,238 [Worker-186: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:34:54,240 [Worker-186: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:34:54,241 [Worker-186: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:34:54,243 [Worker-186: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:36:07,933 [Worker-182: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:36:07,936 [Worker-182: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:36:07,937 [Worker-182: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:36:07,938 [Worker-182: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:37:23,111 [Worker-185: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:37:23,114 [Worker-185: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:37:23,115 [Worker-185: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:37:23,116 [Worker-185: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:39:03,380 [Worker-178: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:03,382 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:39:03,384 [Worker-178: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:03,385 [Worker-178: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:39:28,384 [Worker-182: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:28,386 [Worker-182: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:39:28,388 [Worker-182: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:28,389 [Worker-182: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:39:42,699 [Worker-185: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:42,701 [Worker-185: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:39:42,703 [Worker-185: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:42,704 [Worker-185: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
+2020-01-11 22:39:54,925 [Worker-187: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:54,928 [Worker-187: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2020-01-11 22:39:54,929 [Worker-187: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-01-11 22:39:54,931 [Worker-187: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\kkpramod\eclipse-workspace\spring foundation\src\test\resources
