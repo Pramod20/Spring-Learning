@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ReservationControllerTest" project="reservations" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.pramod.restaurant.web.application.ReservationControllerTest" time="0.61" displayname="ReservationControllerTest" uniqueid="[engine:junit-vintage]/[runner:com.pramod.restaurant.web.application.ReservationControllerTest]">
-    <testcase name="getReservations" classname="com.pramod.restaurant.web.application.ReservationControllerTest" time="0.61" displayname="getReservations" uniqueid="[engine:junit-vintage]/[runner:com.pramod.restaurant.web.application.ReservationControllerTest]/[test:getReservations(com.pramod.restaurant.web.application.ReservationControllerTest)]"/>
-  </testsuite>
-</testrun>

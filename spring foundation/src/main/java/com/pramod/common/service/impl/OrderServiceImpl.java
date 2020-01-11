@@ -12,13 +12,11 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
 public class OrderServiceImpl implements OrderService {
     private final InventoryService inventoryService;
     private final CustomerRepository customerRepository;
     private final SalesOrderRepository salesOrderRepository;
 
-    @Autowired
     public OrderServiceImpl(InventoryService inventoryService, CustomerRepository customerRepository, SalesOrderRepository salesOrderRepository) {
         this.inventoryService = inventoryService;
         this.customerRepository = customerRepository;

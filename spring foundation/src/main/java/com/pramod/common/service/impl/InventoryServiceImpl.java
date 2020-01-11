@@ -9,11 +9,9 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
 public class InventoryServiceImpl implements InventoryService {
     private final InventoryItemRepository inventoryItemRepository;
 
-    @Autowired
     public InventoryServiceImpl(InventoryItemRepository inventoryItemRepository){
         this.inventoryItemRepository = inventoryItemRepository;
     }

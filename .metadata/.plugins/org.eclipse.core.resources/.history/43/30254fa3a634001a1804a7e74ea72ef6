@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="customerRepository" class="com.pramod.common.data.repository.CustomerRepository"/>
+	<bean id="inventoryItemRepository" class="com.pramod.common.data.repository.InventoryItemRepository"/>
+	<bean id="salesOrderRepository" class="com.pramod.common.data.repository.SalesOrderRepository"/>
+	
+	<bean id="inventoryService" class="com.pramod.common.service.impl.InventoryServiceImpl">
+		<constructor-arg ref="inventoryItemRepository"></constructor-arg>
+	</bean>
+	<bean id="orderService" class="com.pramod.common.service.impl.OrderServiceImpl">
+		<constructor-arg ref="inventoryService"></constructor-arg>
+		<constructor-arg  ref="inventoryItemRepository"></constructor-arg>
+		<constructor-arg ref="customerRepository"></constructor-arg>
+	</bean>
+</beans>
