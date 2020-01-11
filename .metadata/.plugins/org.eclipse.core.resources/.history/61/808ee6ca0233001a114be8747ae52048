@@ -1,0 +1,6 @@
+server.server-header="Pramod's Server"
+server.port=3000
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/coursedashboard
+spring.datasource.username=root
+spring.datasource.password=@Kdudi1996

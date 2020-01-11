@@ -1,0 +1,73 @@
+/**
+ * 
+ */
+package com.academy.dashboard.course;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+
+import com.academy.dashboard.topics.Topic;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Entity
+@Table(name = "Course")
+public class Course {
+	@Id
+	@Column(name = "Course Id")
+	private String id;
+	@Column(name = "Course Title")
+	private String title;
+	@Column(name = "Topic Id")
+	private String topicId;
+	@OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, mappedBy = "course")
+	private List<Topic> topics;
+	
+	public Course() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Course(String id, String title, List<Topic> topics) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.topics = topics;
+	}
+	
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	public List<Topic> getTopics() {
+		return topics;
+	}
+	
+	public void setTopics(List<Topic> topics) {
+		this.topics = topics;
+	}
+	
+	
+}

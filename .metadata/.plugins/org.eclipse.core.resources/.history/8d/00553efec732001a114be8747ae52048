@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package com.academy.dashboard.course;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+
+//import com.academy.dashboard.topics.Topic;
+
+
+/**
+ * @author kkpramod
+ *
+ */
+
+@RestController
+public class CourseController {
+	
+	@Autowired
+	private CourseService courseService;
+	
+	@RequestMapping("/courses")
+	public List<Course> getCourses() {
+		return courseService.getAllCourses();
+	}
+	
+	@RequestMapping("/courses/{id}")
+	public Course getCourse(@PathVariable String id) {
+		return courseService.getCourse(id);
+	}
+	
+	@RequestMapping(method=RequestMethod.POST,value="/courses")
+	public void addCourse(@RequestBody Course course)
+	{
+		System.out.println("Adding the course");
+		courseService.addCourse(course);
+		/*courseService.addCourse(new Course("2","High Level Design", Arrays.asList(
+					new Topic("1","Sharding","Easy"),
+					new Topic("2","Load Balancer","Easy"),
+					new Topic("3","CDN","Easy"))));*/
+	}
+	
+	@RequestMapping(method=RequestMethod.PUT,value="/courses/{id}")
+	public void updateCourse(@RequestBody Course course,@PathVariable String id)
+	{
+		courseService.updateCourse(course,id);
+	}
+	
+	@RequestMapping(method=RequestMethod.DELETE,value="/courses/{id}")
+	public void deleteCourse(@PathVariable String id)
+	{
+		courseService.deleteCourse(id);
+	}
+
+}

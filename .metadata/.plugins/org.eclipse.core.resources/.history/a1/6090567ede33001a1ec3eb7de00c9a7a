@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.business.domain;
+
+/**
+ * @author kkpramod
+ *
+ */
+public class RoomReservation {
+
+}

@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package com.pramod.common.config;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.pramod.common.data.repository.CustomerRepository;
+import com.pramod.common.data.repository.InventoryItemRepository;
+import com.pramod.common.data.repository.SalesOrderRepository;
+import com.pramod.common.service.InventoryService;
+import com.pramod.common.service.OrderService;
+import com.pramod.common.service.impl.InventoryServiceImpl;
+import com.pramod.common.service.impl.OrderServiceImpl;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Configuration
+public class AppConfig {
+
+	@Bean
+	public OrderService orderService(InventoryService inventoryService, CustomerRepository customerRepository, SalesOrderRepository salesOrderRepository) {
+		return new OrderServiceImpl(inventoryService, customerRepository, salesOrderRepository);
+	}
+	
+	@Bean
+	public InventoryService inventoryService(InventoryItemRepository inventoryItemRepository) {
+		return new InventoryServiceImpl(inventoryItemRepository);
+	}
+	
+	public static void main(String [] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		OrderService orderService = context.getBean(OrderService.class);
+		System.out.println(orderService==null?"NULL":"A OK");
+	}
+	
+}

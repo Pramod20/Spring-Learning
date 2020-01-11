@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.business.service;
+
+import org.springframework.stereotype.Service;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Service
+public class ReservationService {
+
+}

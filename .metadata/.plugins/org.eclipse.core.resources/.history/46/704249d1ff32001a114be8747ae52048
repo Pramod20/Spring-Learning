@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package com.academy.dashboard.topics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+/**
+ * @author kkpramod
+ *
+ */
+
+@Service
+public class TopicService {
+	
+	private List<Topic> topics = new ArrayList<Topic>(Arrays.asList(
+			new Topic("1","Array","Easy"),
+			new Topic("2","Searching","Easy"),
+			new Topic("3","Sorting","Easy"),
+			new Topic("4","Dynamic Programming","Hard"),
+			new Topic("5","Graphs","Hard")));
+	
+	public List<Topic> getAllTopics()
+	{
+		return topics;
+	}
+
+	public Topic getTopic(String id) {
+		for(Topic topic:topics) {
+			if(topic.getId().equals(id))
+				return topic;
+		}
+		return null;
+	}
+
+	public void addTopic(Topic topic) {
+		topics.add(topic);
+	}
+
+	public void updateTopic(Topic updated_topic, String id) {
+		for(Topic topic:topics) {
+			if(topic.getId().equals(id)) {
+				topics.remove(topic);
+				topics.add(updated_topic);
+			}
+		}
+		
+	}
+
+	public void deleteTopic(String id) {
+		for(Topic topic:topics) {
+			if(topic.getId().equals(id)) {
+				topics.remove(topic);
+			}
+		}
+		
+	}
+	 
+}

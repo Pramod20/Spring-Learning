@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.business.service;
+
+/**
+ * @author kkpramod
+ *
+ */
+public class ReservationService {
+
+}

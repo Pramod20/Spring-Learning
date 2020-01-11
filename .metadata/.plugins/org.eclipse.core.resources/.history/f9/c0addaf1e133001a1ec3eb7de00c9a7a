@@ -1,0 +1,56 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.business.service;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pramod.restaurant.business.domain.RoomReservation;
+import com.pramod.restaurant.data.entity.Reservation;
+import com.pramod.restaurant.data.entity.Room;
+import com.pramod.restaurant.data.repository.GuestRepository;
+import com.pramod.restaurant.data.repository.ReservationRepository;
+import com.pramod.restaurant.data.repository.RoomRepository;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Service
+public class ReservationService {
+	
+	private final RoomRepository roomRepository;
+	private final GuestRepository guestRepository;
+	private final ReservationRepository reservationRepository;
+	
+	@Autowired
+	public ReservationService(RoomRepository roomRepository, GuestRepository guestRepository,
+			ReservationRepository reservationRepository) {
+		super();
+		this.roomRepository = roomRepository;
+		this.guestRepository = guestRepository;
+		this.reservationRepository = reservationRepository;
+	}
+	
+	public List<RoomReservation> getRoomReservationForDate(Date date)
+	{
+		Iterable<Room> rooms = this.roomRepository.findAll();
+		Map<Long, RoomReservation> roomReservationMap = new HashMap<>();
+		rooms.forEach(room->{
+			RoomReservation roomReservation = new RoomReservation();
+			roomReservation.setRoomId(room.getId());
+			roomReservation.setRoomName(room.getName());
+			roomReservation.setRoomNumber(room.getNumber());
+			roomReservationMap.put(room.getId(), roomReservation);
+		});
+		
+		Iterable<Reservation> reservations = this.reservationRepository.findByDate(date);
+	}
+
+}

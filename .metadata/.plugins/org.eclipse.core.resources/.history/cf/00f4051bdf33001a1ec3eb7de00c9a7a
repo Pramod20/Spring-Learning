@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.business.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pramod.restaurant.data.repository.GuestRepository;
+import com.pramod.restaurant.data.repository.ReservationRepository;
+import com.pramod.restaurant.data.repository.RoomRepository;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Service
+public class ReservationService {
+	
+	private final RoomRepository roomRepository;
+	private final GuestRepository guestRepository;
+	private final ReservationRepository reservationRepository;
+	
+	@Autowired
+	public ReservationService(RoomRepository roomRepository, GuestRepository guestRepository,
+			ReservationRepository reservationRepository) {
+		super();
+		this.roomRepository = roomRepository;
+		this.guestRepository = guestRepository;
+		this.reservationRepository = reservationRepository;
+	}
+	
+	
+
+}

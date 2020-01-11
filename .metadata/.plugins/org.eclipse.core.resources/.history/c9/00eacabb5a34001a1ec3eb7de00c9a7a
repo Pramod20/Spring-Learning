@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.pramod.common.config;
+
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Configuration
+public class DataConfig {
+
+}

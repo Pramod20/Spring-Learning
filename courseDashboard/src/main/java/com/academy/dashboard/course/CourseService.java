@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package com.academy.dashboard.course;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+/**
+ * @author kkpramod
+ *
+ */
+@Service("courseService")
+public class CourseService {
+	
+	@Autowired
+	private CourseRepository courseRepository;
+	
+	public List<Course> getAllCourses()
+	{
+		return (List<Course>) courseRepository.findAll();
+	}
+
+	public Optional<Course> getCourse(String id) {
+		return courseRepository.findById(id);
+	}
+
+	public String addCourse(Course course) {
+		courseRepository.save(course);
+		return "Course has been added successfully";
+	}
+
+	public String updateCourse(Course updated_course, String id) {
+		courseRepository.save(updated_course);
+		return "Course has been updated successfully";
+	}
+
+	public String deleteCourse(String id) {
+		courseRepository.deleteById(id);
+		return "Course has been deleted successfully";
+	}
+	
+}

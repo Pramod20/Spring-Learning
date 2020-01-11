@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.academy.dashboard.welcome;
+
+/**
+ * @author kkpramod
+ *
+ */
+public class WelcomeController {
+
+}

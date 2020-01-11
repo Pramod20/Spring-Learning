@@ -1,0 +1,5 @@
+1578681061051	Rename package 'com.pramod.webservice'
+1578683316070	Rename field 'reservationDate'
+1578683522522	Rename package 'com.pramod.restaurant.business'
+1578683537455	Delete element
+1578693726276	Rename method 'getRoomReservationForDate'

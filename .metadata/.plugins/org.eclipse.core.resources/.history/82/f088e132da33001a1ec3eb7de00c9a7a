@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.data.repository;
+
+/**
+ * @author kkpramod
+ *
+ */
+public interface GuestRepository {
+
+}

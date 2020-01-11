@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.academy.dashboard;
+
+/**
+ * @author kkpramod
+ *
+ */
+public class Dashboard {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

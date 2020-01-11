@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.academy.dashboard.topics;
+
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @author kkpramod
+ *
+ */
+
+@RestController
+public class TopicController {
+	
+	
+}

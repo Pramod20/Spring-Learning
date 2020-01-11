@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.web.service;
+
+/**
+ * @author kkpramod
+ *
+ */
+public class ReservationServiceController {
+
+}

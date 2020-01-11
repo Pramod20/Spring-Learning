@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pramod.restaurant.data.entity;
+
+/**
+ * @author kkpramod
+ *
+ */
+public class Room {
+
+}

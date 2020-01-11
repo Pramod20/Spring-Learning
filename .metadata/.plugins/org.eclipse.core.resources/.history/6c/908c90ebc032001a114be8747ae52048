@@ -1,0 +1,65 @@
+/**
+ * 
+ */
+package com.academy.dashboard.course;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.academy.dashboard.topics.Topic;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Service
+public class CourseService {
+	
+	private List<Course> courses = new ArrayList<Course>(Arrays.asList(
+			new Course("1","Data Structures and Algorithms", Arrays.asList(
+					new Topic("1","Array","Easy"),
+					new Topic("2","Searching","Easy"),
+					new Topic("3","Sorting","Easy"),
+					new Topic("4","Dynamic Programming","Hard"),
+					new Topic("5","Graphs","Hard")))));
+	
+	public List<Course> getAllCourses()
+	{
+		return courses;
+	}
+
+	public Course getCourse(String id) {
+		for(Course course:courses) {
+			if(course.getId().equals(id))
+				return course;
+		}
+		return null;
+	}
+
+	public void addCourse(Course course) {
+		courses.add(course);
+	}
+
+	public void updateCourse(Course updated_course, String id) {
+		for(Course course:courses) {
+			if(course.getId().equals(id)) {
+				courses.remove(course);
+				courses.add(updated_course);
+			}
+		}
+		
+	}
+
+	public void deleteCourse(String id) {
+		for(Course course:courses) {
+			if(course.getId().equals(id)) {
+				courses.remove(course);
+			}
+		}
+		
+	}
+	
+}

@@ -1,0 +1,68 @@
+/**
+ * 
+ */
+package com.academy.dashboard.course;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.academy.dashboard.topics.Topic;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Entity
+@Table(name = "Course")
+public class Course {
+	@Id
+	private String id;
+	private String title;
+	@Autowired
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "course")
+	private List<Topic> topics;
+	
+	public Course() {
+		super();
+	}
+		
+	public Course(String id, String title, List<Topic> topics) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.topics = topics;
+	}
+
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	public List<Topic> getTopics() {
+		return topics;
+	}
+	
+	public void setTopics(List<Topic> topics) {
+		this.topics = topics;
+	}
+	
+	
+}

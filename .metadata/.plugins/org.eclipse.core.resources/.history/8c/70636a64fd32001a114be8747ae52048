@@ -1,0 +1,79 @@
+/**
+ * 
+ */
+package com.academy.dashboard.topics;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import com.academy.dashboard.course.Course;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+/**
+ * @author kkpramod
+ *
+ */
+@Entity
+@Table(name = "Topic")
+public class Topic {
+	@Id
+	@Column(name = "Topic Id")
+	private String id;
+	@Column(name = "Topic Title")
+	private String title;
+	@Column(name = "Topic Difficulty")
+	private String difficulty;
+	@Column(name = "Course")
+	private String courseTitle;
+	@ManyToOne
+	@JoinColumns({
+        @JoinColumn(name="Course", referencedColumnName="Course Title",insertable = false,updatable = false),
+    })
+	@JsonIgnore
+	private Course course;
+	
+	
+	
+	public Topic() {
+		super();
+	}
+
+	public Topic(String id, String title, String difficulty) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.difficulty = difficulty;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDifficulty() {
+		return difficulty;
+	}
+
+	public void setDifficulty(String difficulty) {
+		this.difficulty = difficulty;
+	}
+	
+	
+	
+}
