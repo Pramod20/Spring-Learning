@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pramod.common.aspects;
+
+/**
+ * @author kkpramod
+ *
+ */
+public @interface Loggable {
+
+}
